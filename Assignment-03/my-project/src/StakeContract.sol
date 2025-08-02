@@ -18,7 +18,7 @@ contract Stake is ERC20 {
          require(_amount > 0, "Amount should be greater than 0");
          
          IERC20 token = IERC20(_tokenAddress); // create an interface reference to an already deployed ERC20 token contract.
-         require(token.allowance(address(token), msg.sender, _amount) >= _amount, "You don't have enough allowance");
+        require(token.allowance(msg.sender, address(this)) >= _amount, "You don't have enough allowance");
          bool success = token.transferFrom(msg.sender, address(this), _amount);
          require(success, "Transfer failed");
          totalStaked += _amount;
