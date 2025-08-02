@@ -1,0 +1,3 @@
+[submodule "Assignment-02/my-project/lib/forge-std"]
+	path = Assignment-02/my-project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
