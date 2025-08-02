@@ -9,3 +9,8 @@
 
 ## Description
 Lock the token for the users during withdrawal for 21 days  .They dont get the new token for that amount of time.
+
+# Assignment-03
+
+## Description
+Stakes an ERC-20 token instead of native ETH.
